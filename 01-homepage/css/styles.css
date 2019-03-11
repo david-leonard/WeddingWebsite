@@ -345,7 +345,7 @@ header .main-menu li.drop-down a.mouseover + ul.drop-down-menu{ display: block;
 .contact-area .map-area{ width: 50%; position: absolute; top: 0; bottom: 0; right: 0; }
 
 
-.contact-area .phone{ margin: 10px 0; font-size: 2em; color: #E45F74; }
+.contact-area .phone{ margin: 10px 0; font-size: 2em; color: #132749; }
 
 
 /* ---------------------------------
