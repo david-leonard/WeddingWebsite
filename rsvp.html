@@ -62,68 +62,11 @@
             </div><!--display-table-cell-->
         </div><!-- display-table-->
     </div><!-- main-slider -->
+    <!-- https://github.com/dwyl/learn-to-send-email-via-google-script-html-no-server -->   
 
-    <!-- https://github.com/dwyl/learn-to-send-email-via-google-script-html-no-server -->
-
-    <form id="rsvp-form" method="post" data-email="" action="https://script.google.com/macros/s/AKfycbwSgcgW7uVMYtfEx9gZHiJdoNSSUtJKjwzqjfloAA/exec">
-
-        <div class="form-elements">
-            <fieldset class="pure-group">
-                <label for="name">Name: </label>
-                <input id="name" name="name" placeholder="Invite Recipient" />
-            </fieldset>
-
-            <fieldset class="pure-group">
-                <label for="numOfGuests">Number Of Guests: </label>
-                <select id="numOfGuests" name="numOfGuests">
-                    <option value="0">No Guests</option>
-                    <option value="1">1 Guest</option>
-                    <option value="2">2 Guests</option>
-                    <option value="3">3 Guests</option>
-                    <option value="4">4 Guests</option>
-                    <option value="5">5 Guests</option>
-                    <option value="6">6 Guests</option>
-                </select>
-            </fieldset>
-
-            <fieldset class="pure-group">
-                <label for="guestsNames">Guest(s) Name(s): </label>
-                <textarea id="guestsNames" name="guestsNames" rows="5"
-                          placeholder="Sarah Ross&#10;David Leonard"></textarea>
-            </fieldset>
-
-            <fieldset class="pure-group">
-                <label for="email"><em>Your</em> Email Address:</label>
-                <input id="email" name="email" type="email" value=""
-                       required placeholder="your.name@email.com" />
-                <span class="email-invalid" style="display:none">
-                    Must be a valid email address
-                </span>
-            </fieldset>
-
-            <fieldset class="pure-group">
-                <label for="dietaryRestrictions">Dietary Restrictions (for you and your guest(s)): </label>
-                <textarea rows="10" id="dietaryRestrictions" name="dietaryRestrictions" placeholder="Sarah: Lactose, Milk, Cheese&#10;David: None"></textarea>
-            </fieldset>
-
-            <button id="form-sub-btn" class="button-success pure-button button-xlarge">
-                <i class="fa fa-paper-plane"></i>&nbsp;Send
-            </button>
-        </div>
-
-        <div style="display:none" class="thankyou_message">
-            <!-- You can customize the thankyou message by editing the code below -->
-            <h2>
-                Thank you for sharing this day with us!
-            </h2>
-        </div>
-
-    </form>
-
-    <section class="section contact-area">
+    <section class="contact-area">
         <div class="container">
             <div class="row">
-
                 <div class="col-sm-12 col-md-12 col-lg-12">
                     <div class="contact-form margin-bottom">
                         <h2 class="center-text">Are you coming?</h2>
@@ -134,42 +77,76 @@
                                 <div class="row">
 
                                     <div class="col-sm-12 margin-bottom">
-                                        <label>Full Name</label>
-                                        <input class="name-input" type="text">
-                                    </div>
-                                    <div class="col-sm-12 margin-bottom">
-                                        <label>Email</label>
-                                        <input class="email-input" type="text">
-                                    </div>
-                                    <div class="col-sm-6 margin-bottom">
-                                        <label>Guest</label>
-                                        <select class="event-select" name="option">
-                                            <option value="1"><span>00</span></option>
-                                            <option value="2">01</option>
-                                            <option value="3">02</option>
-                                            <option value="3">03</option>
-                                            <option value="3">04</option>
-                                        </select>
-                                    </div>
-                                    <div class="col-sm-6 margin-bottom">
-                                        <label>Event</label>
-                                        <select class="event-select" name="option">
-                                            <option value="1">All Events</option>
-                                            <option value="3">Option 1</option>
-                                            <option value="3">Option 2</option>
-                                            <option value="3">Option 3</option>
-                                        </select>
-                                    </div>
-                                    <div class="col-sm-5 center-text">
-                                        <button class="btn"><b>I AM ATTENDING</b></button>
-                                    </div>
-                                    <div class="col-sm-1"></div>
-                                    <div class="col-sm-5 center-text">
-                                        <button class="btn"><b>I AM ATTENDING</b></button>
+                                        <fieldset class="pure-group">
+                                            <label for="name">Full Name (Invite Recipient): </label>
+                                            <input id="name" name="name" placeholder="Your name here" required />
+                                        </fieldset>
                                     </div>
 
+                                    <div class="col-sm-12 margin-bottom">
+                                        <fieldset class="pure-group">
+                                            <label for="numOfGuests">Number of Guest(s) (Indicated on your invitation, do not include yourself): </label>
+                                            <select class="event-select" id="numOfGuests" name="numOfGuests" onchange="numGuestChange(this)">
+                                                <option value="0">No Guests</option>
+                                                <option value="1">1 Guest</option>
+                                                <option value="2">2 Guests</option>
+                                                <option value="3">3 Guests</option>
+                                                <option value="4">4 Guests</option>
+                                                <option value="5">5 Guests</option>
+                                                <option value="6">6 Guests</option>
+                                            </select>
+                                        </fieldset>
+                                    </div>
+
+                                    <div class="col-sm-12 margin-bottom">
+                                        <fieldset class="pure-group">
+                                            <label for="guestsNames">Guest(s) Name(s): </label>
+                                            <textarea id="guestsNames"
+                                                      name="guestsNames"
+                                                      rows="5"
+                                                      placeholder="Sarah Ross&#10;David Leonard"
+                                                      class="fullwidth"
+                                                      disabled></textarea>
+                                        </fieldset>
+                                    </div>
+
+                                    <div class="col-sm-12 margin-bottom">
+                                        <fieldset class="pure-group">
+                                            <label for="email">Your Email Address: </label>
+                                            <input id="email" name="email" type="email" value=""
+                                                   required placeholder="your.email@email.com" />
+                                            <span class="email-invalid" style="display:none">
+                                                Must be a valid email address
+                                            </span>
+                                        </fieldset>
+                                    </div>
+
+                                    <div class="col-sm-12 margin-bottom">
+                                        <fieldset class="pure-group">
+                                            <label for="dietaryRestrictions">Dietary Restrictions (for you and your guest(s)): </label>
+                                            <textarea class="fullwidth" rows="10" id="dietaryRestrictions" name="dietaryRestrictions" placeholder="Sarah: Lactose, Milk, Cheese&#10;David: None"></textarea>
+                                        </fieldset>
+                                    </div>
+
+                                    <input hidden name="isAttending" value="attending" id="isAttending" />
+                                    <input hidden name="totalNumPeople" value="0" id="totalPeople"/>
+
+                                    <div class="col-sm-5 center-text">
+                                        <button class="btn form-sub-btn" id="btn-attending"><b>I AM ATTENDING</b></button>
+                                    </div>
+                                    <div class="col-sm-2"></div>
+                                    <div class="col-sm-5 center-text">
+                                        <button class="btn form-sub-btn" id="btn-not-attending"><b>I AM NOT ATTENDING</b></button>
+                                    </div>
                                 </div><!-- row -->
-                            </div><!-- form-elements-->                                
+                            </div><!-- form-elements-->
+
+                            <div style="display:none" class="thankyou_message">
+                                <!-- You can customize the thankyou message by editing the code below -->
+                                <h2>
+                                    Thank you for sharing this day with us!
+                                </h2>
+                            </div>
                         </form>
                     </div><!-- contact-form -->
                 </div><!-- col-sm-6 -->
@@ -218,6 +195,8 @@
     <script src="common-js/bootstrap.js"></script>
 
     <script src="common-js/scripts.js"></script>
+
+    <script src="common-js/rsvp.js"></script>
 
     <script data-cfasync="false" type="text/javascript" src="common-js/form-submission-handler.js"></script>
 

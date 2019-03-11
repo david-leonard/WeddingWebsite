@@ -116,7 +116,7 @@
     document.addEventListener("DOMContentLoaded", loaded, false);
 
     function disableAllButtons(form) {
-        var buttons = $("#form-sub-btn");
+        var buttons = $(".form-sub-btn");
         for (var i = 0; i < buttons.length; i++) {
             buttons[i].disabled = true;
         }
