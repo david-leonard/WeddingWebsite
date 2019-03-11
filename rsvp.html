@@ -9,7 +9,9 @@
 	
 	<!-- Font -->
 	
-	<link href="https://fonts.googleapis.com/css?family=Playball%7CBitter" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Playball%7CBitter" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Homemade+Apple" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
 	
 	<!-- Stylesheets -->
 	
@@ -18,9 +20,13 @@
 	<link href="common-css/font-icon.css" rel="stylesheet">
 	
 	
-	<link href="02-rsvp/css/styles.css" rel="stylesheet">
+	<link href="common-css/rsvp-css/css/styles.css" rel="stylesheet">
 	
-	<link href="02-rsvp/css/responsive.css" rel="stylesheet">
+	<link href="common-css/rsvp-css/css/responsive.css" rel="stylesheet">
+
+    <link href="common-css/custom.css" rel="stylesheet">
+
+    <link rel="shortcut icon" href="#" />
 	
 </head>
 <body>
@@ -118,65 +124,52 @@
         <div class="container">
             <div class="row">
 
-                <div class="col-sm-12 col-md-4 col-lg-6">
-                    <div class="margin-bottom display-table">
-                        <div class="display-table-cell">
-
-                            <div class="heading">
-                                <h2 class="title">Contact Us</h2>
-                                <i class="icon icon-star"></i>
-                            </div>
-
-                            <p>On the 25 September 2017</p>
-                            <p>Join us as we celebrate life and love.</p>
-                            <h3><a href="tel:784-412-0646" class="phone">784-412-0646</a></h3>
-                            <h3><a href="tel:784-412-0245" class="phone">784-412-0245</a></h3>
-                            <h5><a href="mailto:events@colorlib.com" class="email">events@colorlib.com</a></h5>
-                            <p>14 Baria street 133/2, New York City, US</p>
-
-                        </div><!-- display-table-cell -->
-                    </div><!-- margin-bottom -->
-                </div><!-- col-sm-6 -->
-
-                <div class="col-sm-12 col-md-8 col-lg-6">
+                <div class="col-sm-12 col-md-12 col-lg-12">
                     <div class="contact-form margin-bottom">
-                        <h2 class="center-text">Are you getting?</h2>
+                        <h2 class="center-text">Are you coming?</h2>
                         <h4 class="pre-title center-text">RSVP HERE!</h4>
-                        <form method="post">
-                            <div class="row">
+                        <form id="rsvp-form" method="post" data-email="" action="https://script.google.com/macros/s/AKfycbwSgcgW7uVMYtfEx9gZHiJdoNSSUtJKjwzqjfloAA/exec">
 
-                                <div class="col-sm-12 margin-bottom">
-                                    <label>Full Name</label>
-                                    <input class="name-input" type="text">
-                                </div>
-                                <div class="col-sm-12 margin-bottom">
-                                    <label>Email</label>
-                                    <input class="email-input" type="text">
-                                </div>
-                                <div class="col-sm-6 margin-bottom">
-                                    <label>Guest</label>
-                                    <select class="event-select" name="option">
-                                        <option value="1"><span>00</span></option>
-                                        <option value="2">01</option>
-                                        <option value="3">02</option>
-                                        <option value="3">03</option>
-                                        <option value="3">04</option>
-                                    </select>
-                                </div>
-                                <div class="col-sm-6 margin-bottom">
-                                    <label>Event</label>
-                                    <select class="event-select" name="option">
-                                        <option value="1">All Events</option>
-                                        <option value="3">Option 1</option>
-                                        <option value="3">Option 2</option>
-                                        <option value="3">Option 3</option>
-                                    </select>
-                                </div>
-                                <div class="col-sm-12 center-text">
-                                    <button class="btn"><b>I AM ATTENDING</b></button>
-                                </div>
+                            <div class="form-elements">
+                                <div class="row">
 
-                            </div><!-- row -->
+                                    <div class="col-sm-12 margin-bottom">
+                                        <label>Full Name</label>
+                                        <input class="name-input" type="text">
+                                    </div>
+                                    <div class="col-sm-12 margin-bottom">
+                                        <label>Email</label>
+                                        <input class="email-input" type="text">
+                                    </div>
+                                    <div class="col-sm-6 margin-bottom">
+                                        <label>Guest</label>
+                                        <select class="event-select" name="option">
+                                            <option value="1"><span>00</span></option>
+                                            <option value="2">01</option>
+                                            <option value="3">02</option>
+                                            <option value="3">03</option>
+                                            <option value="3">04</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-sm-6 margin-bottom">
+                                        <label>Event</label>
+                                        <select class="event-select" name="option">
+                                            <option value="1">All Events</option>
+                                            <option value="3">Option 1</option>
+                                            <option value="3">Option 2</option>
+                                            <option value="3">Option 3</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-sm-5 center-text">
+                                        <button class="btn"><b>I AM ATTENDING</b></button>
+                                    </div>
+                                    <div class="col-sm-1"></div>
+                                    <div class="col-sm-5 center-text">
+                                        <button class="btn"><b>I AM ATTENDING</b></button>
+                                    </div>
+
+                                </div><!-- row -->
+                            </div><!-- form-elements-->                                
                         </form>
                     </div><!-- contact-form -->
                 </div><!-- col-sm-6 -->
@@ -186,10 +179,10 @@
     </section><!-- section -->
 
     <div class="map-area">
-        <div id="map" style="height:100%;"></div>
+        <div id="map" class="map-area">
+            <iframe class="map-area" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11669.14266393532!2d-81.283499!3d43.014374!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x43833d992301f67!2sWindermere+Manor!5e0!3m2!1sen!2sca!4v1552238277560" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+        </div>
     </div><!-- map-area -->
-    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB-oEyU88bRR6xcbV1gI_Cahc8ugKC_JPE&callback=initMap"></script>
-
 
     <footer>
         <div class="container center-text">

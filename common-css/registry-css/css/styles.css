@@ -23,13 +23,8 @@
 		DROPDOWN SUBMENU
 		DROPDOWN HOVER 
 	4. SLIDER
-	5. STORY AREA
-	6. REMAINING TIME
-	7. WEDDING DETAILS AREA
-	8. WEDDING CEREMONY
-	9. CONTACT AREA
-	10. VIEW GALLERY
-	11. FOOTER
+	5. CONTACT AREA
+	6. FOOTER
 
 ====================================================
 
@@ -52,8 +47,8 @@ h1,h2,h3{ font-family: 'Playball', cursive; }
 
 p{ line-height: 1.6; font-size: 1.05em; font-weight: 400; color: #555; }
 
-h1{ font-size: 5em; line-height: 1; }
-h2{ font-size: 3.5em; line-height: 1.1; }
+h1{ font-size: 5.5em; line-height: 1; }
+h2{ font-size: 3em; line-height: 1.1; }
 h3{ font-size: 2.5em; }
 h4{ font-size: 1.5em; }
 h5{ font-size: 1.2em; }
@@ -82,29 +77,25 @@ b.light-color{ color: #444; }
 [class^="icon-"]:before, [class*=" icon-"]:before{ line-height: inherit; }
 
 
-
 /* ---------------------------------
 2. COMMONS FOR PAGE DESIGN
 --------------------------------- */
 
-.btn{ padding: 15px 30px; border-radius: 1px; letter-spacing: 2px; 
-	border: 1px solid #E45F74; background: #E45F74; color: #fff; }
+.btn{ padding: 15px 30px; border-radius: 1px; letter-spacing: 2px; border: 1px solid #E45F74; 
+	background: #E45F74; color: #fff; }
 
 .btn:hover{ color: #E45F74; background: none; }
 
-.btn-2{ font-size: .9em; padding: 15px 30px; border-radius: 1px; letter-spacing: 2px; 
-	border: 1px solid #E45F74; }
+.btn-2{ font-size: .9em; padding: 15px 30px; border-radius: 1px; letter-spacing: 2px; border: 1px solid #E45F74; }
 
 .btn-2:hover{ background: #E45F74; color: #fff; }
 
-.border-btn{ font-size: .9em; padding-bottom: 5px; background: none; color: inherit; border: 0; 
-	position: relative; overflow: hidden; }
+.border-btn{ font-size: .9em; padding-bottom: 5px; background: none; color: inherit; border: 0; position: relative; overflow: hidden; }
 
-.border-btn:after{ content:''; position: absolute; bottom: 0; left: 0; right: 0; height: 2px; 
+.border-btn:after{ content:''; position: absolute; bottom: 0; left: 0; right: 0; height: 2px; transition: all .3s; background: #E45F74; }
+
+.border-btn:before{ content:''; position: absolute; bottom: 0; left: 0; right: 0; height: 2px; transform: translateX(-130%); 
 	transition: all .3s; background: #E45F74; }
-
-.border-btn:before{ content:''; position: absolute; bottom: 0; left: 0; right: 0; height: 2px; 
-	transform: translateX(-130%); transition: all .3s; background: #E45F74; }
 	
 .border-btn:hover:after{ transform: translateX(130%); }
 
@@ -113,7 +104,7 @@ b.light-color{ color: #444; }
 
 .section{ padding: 100px 0 70px; }
 
-.section .heading{ padding-bottom: 40px; }
+.section .heading{ padding-bottom: 30px; }
 
 .section .heading .icon{ font-size: 18px; margin-top: 20px; color: #E45F74; }
 
@@ -180,8 +171,8 @@ b.light-color{ color: #444; }
 3. MENU
 --------------------------------- */
 
-header{ position: absolute; left: 0; right: 0; top: 20px; z-index: 1000; font-size: .95em; 
-	border-bottom: 1px solid rgba(255,255,255, .2); color: #fff; }
+header{ position: absolute; left: 0; right: 0; top: 15px; z-index: 1000; font-size: .95em; 
+	border-bottom: 1px solid rgba(255,255,255, .1); color: #fff; }
 
 	
 /* MIDDLE AREA */
@@ -224,7 +215,8 @@ header .main-menu li.drop-down > ul.drop-down-inner{ top: 0; left: auto; left: 1
 
 /* DROPDOWN HOVER */
 
-header .main-menu > li > a:hover,
+header .main-menu > li > a:hover{ border-color: #E45F74; }
+
 header .main-menu li a.mouseover{ border-color: #E45F74; }
 
 header .main-menu li.drop-down a.mouseover + ul.drop-down-menu{ display: block; 
@@ -247,132 +239,61 @@ header .main-menu li.drop-down a.mouseover + ul.drop-down-menu{ display: block;
 4. SLIDER
 --------------------------------- */
 
-.main-slider{ height: 100vh; position: relative; z-index: 1; 
-	background-image: url(../../images/slider-1-1600x900.jpg); background-size: cover; color: #fff; } 
+.main-slider{ height: 500px; position: relative; z-index: 1; 
+	background-image: url(../../../images/counter-1-1600x600.jpg); background-size: cover; color: #fff; } 
 
 .main-slider:after{ content:''; position: absolute; top: 0; bottom: 0; left: 0; right: 0; 
 	z-index: -1; background: rgba(0,0,0,.3); }
 
-.slider-content .date{ margin: 10px 0 0; }
+.main-slider .slider-content .title{ margin-bottom: 20px; }
 
-.slider-content i{ line-height: 1; }
+.main-slider .slider-content i{ margin-right: 10px; transform: translateY(3px); }
 
-.slider-content i.small-icon{ font-size: 2.5em; }
-
-.slider-content .title i{ transform: translateY(10px); font-size: .8em; color: #E45F74; }
 
 
 /* ---------------------------------
-5. STORY AREA
+5. CONTENT AREA
 --------------------------------- */
 
-.story-area{ position: relative; z-index: 1; }
+.regular-area{ padding: 0 0 100px 0; margin-top: -50px; position: relative; z-index: 10; }
 
-.story-area:after{ content: ''; position: absolute; top: 0; bottom: 0; left: 0; right: 0; z-index: -1;
-	opacity: .8; background: url(../../images/Background_Circle.png); }
+.regular-area .content{ padding: 40px 70px; box-shadow: 2px 10px 20px rgba(0,0,0,.2); background: #fff; }
 
+.content .margin-top-btm{ margin: 20px 0; }
 
-/* ---------------------------------
-6. REMAINING TIME
---------------------------------- */
+.content .img-wrapper{ margin: 30px 0; }
 
-.counter-area{ position: relative; z-index: 1; 
-	background-image: url(../../images/counter-1-1600x600.jpg); background-size: cover; color: #fff; }
+.content .quoto-area{ position: relative; padding-left: 50px; }
 
-.counter-area:after{ content:''; position: absolute; top: 0; bottom: 0; left: 0; right: 0; 
-	z-index: -1; background: rgba(0,0,0,.3); }
-	
-.remaining-time .time-sec{ position: relative; display: inline-block; margin: 0 20px; margin-bottom: 30px; 
-	height: 120px; width: 120px; padding-top: 25px; border-radius: 100px; border: 1px solid #fff; }
+.content .quoto-area .quoto{ font-size: 2em; }
 
-.remaining-time .time-sec .title{ font-size: 3em; line-height: 1; display: block; }
+.content .quoto-area .quoto i{ position: absolute; top: -10px; left: 0; transform: rotate(180deg); color: #E45F74; }
 
+.content .quoto-area .name{ margin-top: 20px; color: #666; }
 
+.content .braidmaids-name li{ display: block; margin: 10px 0; }
 
-/* ---------------------------------
-7. WEDDING DETAILS AREA
---------------------------------- */
+.content .braidmaids-name li:first-child:before{ display: none; }
 
-.wedding-details{ overflow: hidden; position: relative; }
-
-.wedding-details:after{ content:''; position: absolute; top: 0; bottom: 0; left: 50%; margin-left: -.5px;
-	width: 1px; background: #ccc; }
-
-.w-detail{ width: 50%; padding: 0 50px; margin-bottom: 30px; position: relative; clear: both; margin-top: -40px; }
-
-.w-detail:first-child{ margin-top: 0; }
-
-.w-detail:last-child{ margin-bottom: 0; }
-
-.w-detail:after{ content:''; position: absolute; top: 0; height: 18px; width: 18px; border-radius: 20px;
-	z-index: 1; border: 1px solid #aaa; background: #fff; }
-
-.w-detail.right{ text-align: left;  float: right; }
-
-.w-detail.right:after{ left: 0; margin-left: -9px; }
-	
-.w-detail.left{ text-align: right;  float: left; }
-
-.w-detail.left:after{ right: 0; margin-right: -9px; }
-	
-.w-detail .title{ margin: 10px 0; }
-
-.w-detail .icon{ font-size: 3.5em; line-height: 1; color: #E45F74; }
-
+.content .braidmaids-name li:before{ content:""; display: inline-block; height: 10px; width: 10px; 
+	border-radius: 10px; margin-right: 15px; border: 1px solid #888; }
 
 
 /* ---------------------------------
-8. WEDDING CEREMONY
---------------------------------- */
-
-.ceremony-area{ position: relative; z-index: 1; 
-	background-image: url(../../images/counter-1-1600x600.jpg); background-size: cover; color: #fff; }
-
-.ceremony-area:after{ content:''; position: absolute; top: 0; bottom: 0; left: 0; right: 0; 
-	z-index: -1; background: rgba(0,0,0,.3); }
-	
-.ceremony .desc{ margin-bottom: 15px; color: #fff;  }
-
-
-/* ---------------------------------
-9. CONTACT AREA
---------------------------------- */
-
-.contact-area{ position: relative; overflow: hidden; box-shadow: 1px 10px 40px rgba(0,0,0,.4); }
-
-.contact-area .contact-wrapper{ width: 50%; }
-
-.contact-area .map-area{ width: 50%; position: absolute; top: 0; bottom: 0; right: 0; }
-
-
-.contact-area .phone{ margin: 10px 0; font-size: 2em; color: #132749; }
-
-
-/* ---------------------------------
-10. VIEW GALLERY
---------------------------------- */
-
-.galery-area .gallery-btn{ margin-top: 30px; }
-
-
-
-/* ---------------------------------
-11. FOOTER
+6. FOOTER
 --------------------------------- */
 
 footer{ position: relative; z-index: 1; padding-top: 70px; }
 
 footer:after{ content: ''; position: absolute; top: 0; bottom: 0; left: 0; right: 0; z-index: -1;
-	opacity: .8; background: url(../../images/Background_Circle.png); }
+	opacity: .8; background: url(../../../images/Background_Circle.png); }
 	
 footer ul > li > a{ padding: 10px 15px; }
 
 
 footer .logo-wrapper .icon{ color: #E45F74; }
 
-footer .logo{ display: block; height: 50px; }
-
-footer .logo img{ height: 100%; width: auto; }
+footer .logo{ display: block; width: 150px; margin: 0 auto; }
 
 footer .newsletter{ margin: 20px 0; }
 
