@@ -61,6 +61,7 @@
 
     $("#rsvp-form").submit(function (event) {  // handles form submit without any jquery
         event.preventDefault();           // we are submitting via xhr below
+        showLoading();
         var form = event.target;
         var data = getFormData(form);         // get the values submitted in the form
 
@@ -95,6 +96,7 @@
                 if (thankYouMessage) {
                     thankYouMessage.style.display = "block";
                 }
+                $(".loading").hide();
                 return;
             };
             // url encode form data for sending as post data
@@ -120,5 +122,19 @@
         for (var i = 0; i < buttons.length; i++) {
             buttons[i].disabled = true;
         }
+    }
+
+    function showLoading() {
+        jQuery.fn.center = function () {
+            this.css("position", "absolute");
+            this.css("top", Math.max(0, (($(window).height() - $(this).outerHeight()) / 2) +
+                $(window).scrollTop()) + "px");
+            this.css("left", Math.max(0, (($(window).width() - $(this).outerWidth()) / 2) +
+                $(window).scrollLeft()) + "px");
+            return this;
+        }
+
+        $(".loader").center();
+        $(".loading").show();
     }
 })();

@@ -15,21 +15,27 @@
 	
 	<!-- Stylesheets -->
 	
-	<link href="common-css/bootstrap.css" rel="stylesheet">
+	<link href="common-css/bootstrap.css" rel="stylesheet" />
 	
-	<link href="common-css/font-icon.css" rel="stylesheet">
+	<link href="common-css/font-icon.css" rel="stylesheet" />
 	
 	
-	<link href="common-css/rsvp-css/css/styles.css" rel="stylesheet">
+	<link href="common-css/rsvp-css/css/styles.css" rel="stylesheet" />
 	
-	<link href="common-css/rsvp-css/css/responsive.css" rel="stylesheet">
+	<link href="common-css/rsvp-css/css/responsive.css" rel="stylesheet" />
 
-    <link href="common-css/custom.css" rel="stylesheet">
+    <link href="common-css/custom.css" rel="stylesheet" />
+
+    <link href="common-css/loading-gif.css" rel="stylesheet" />
 
     <link rel="shortcut icon" href="#" />
 	
 </head>
 <body>
+
+    <div style="display: none;" class="loading">
+        <div class="loader"></div>
+    </div>
 
     <header>
 
@@ -62,7 +68,7 @@
             </div><!--display-table-cell-->
         </div><!-- display-table-->
     </div><!-- main-slider -->
-    <!-- https://github.com/dwyl/learn-to-send-email-via-google-script-html-no-server -->   
+    <!-- https://github.com/dwyl/learn-to-send-email-via-google-script-html-no-server -->
 
     <section class="contact-area">
         <div class="container rsvp-container">
@@ -129,12 +135,12 @@
                                     </div>
 
                                     <input hidden name="isAttending" value="attending" id="isAttending" />
-                                    <input hidden name="totalNumPeople" value="0" id="totalPeople"/>
+                                    <input hidden name="totalNumPeople" value="0" id="totalPeople" />
 
                                     <div class="col-sm-5 center-text">
                                         <button class="btn form-sub-btn" id="btn-attending"><b>I AM ATTENDING</b></button>
                                     </div>
-                                    <div class="col-sm-2"></div>
+                                    <div id="btnSpace" class="col-sm-2"></div>
                                     <div class="col-sm-5 center-text">
                                         <button class="btn form-sub-btn" id="btn-not-attending"><b>I AM NOT ATTENDING</b></button>
                                     </div>
