@@ -321,7 +321,7 @@ footer .email-area .submit-btn:hover{ background: #000; color: #E55D73; }
 
 footer .copyright{ padding: 20px 0 30px; }
 
-.container {
+.rsvp-container {
     z-index: 1;
     margin-top: -50px;
     padding-bottom: 50px;
