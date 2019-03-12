@@ -4,7 +4,7 @@ body{ font-size: 16px; font-family: 'Montserrat', sans-serif; width: 100%; heigh
 	-webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; word-wrap: break-word; 
 	color: #333 !important; }
 
-h1,h2{ font-family: 'Homemade Apple', cursive !important; }
+h1,h2{ font-size: 40px !important; font-family: 'Montserrat', sans-serif !important; }
 
 h3{ font-family: 'Montserrat', sans-serif !important; }
 
