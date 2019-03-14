@@ -55,6 +55,10 @@ footer .email-area .submit-btn{ position: absolute; right: 0; height: 55px; widt
 
 footer .email-area .submit-btn:hover{ background: #000; color: #0E2E5E !important; }
 
-#main-menu li a:hover { border: none !important; text-decoration: underline; color: #FFFFFF !important; }
+#main-menu li a:hover {
+    border: none;
+    border-bottom: 3px solid white !important;
+    color: #FFFFFF !important; 
+}
 
 .fullwidth { width: 100% !important; }
