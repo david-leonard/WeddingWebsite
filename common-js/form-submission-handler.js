@@ -92,11 +92,23 @@
                 if (formElements) {
                     formElements.style.display = "none"; // hide form
                 }
-                var thankYouMessage = form.querySelector(".thankyou_message");
-                if (thankYouMessage) {
-                    thankYouMessage.style.display = "block";
+
+                // user is attending 
+                if (parseInt(data.totalNumPeople) >= 1) {
+                    var thankYouMessage = form.querySelector(".thankyou_message");
+                    if (thankYouMessage) {
+                        thankYouMessage.style.display = "block";
+                    }
+                } else {
+                    var SorryMessage = form.querySelector(".sorry_message");
+                    if (SorryMessage) {
+                        SorryMessage.style.display = "block";
+                    }
                 }
                 $(".loading").hide();
+
+                $("html, body").animate({ scrollTop: 0 }, "slow");
+
                 return;
             };
             // url encode form data for sending as post data
