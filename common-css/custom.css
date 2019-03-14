@@ -4,11 +4,13 @@ body{ font-size: 16px; font-family: 'Montserrat', sans-serif; width: 100%; heigh
 	-webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; word-wrap: break-word; 
 	color: #333 !important; }
 
-h1,h2{ font-family: 'Homemade Apple', cursive !important; }
+h1{ font-size: 50px !important; letter-spacing: 5px !important; font-family: 'Montserrat', sans-serif !important; }
 
-h3{ font-family: 'Montserrat', sans-serif !important; }
+h2{ font-size: 30px !important; letter-spacing: 5px !important; font-family: 'Montserrat', sans-serif !important; }
 
-h3{ font-size: 1.5em !important; }
+h3{ font-family: 'Montserrat', sans-serif !important; letter-spacing: 5px !important }
+
+h3{ font-size: 1.5em !important; letter-spacing: 5px !important }
 
 a:focus, a:active, a:hover,
 button:focus, button:active, button:hover,
@@ -62,3 +64,5 @@ footer .email-area .submit-btn:hover{ background: #000; color: #0E2E5E !importan
 }
 
 .fullwidth { width: 100% !important; }
+
+footer .copyright{ font-size: 10px !important; }
