@@ -82,14 +82,14 @@
 
                                     <div class="col-sm-12 margin-bottom">
                                         <fieldset class="pure-group">
-                                            <label for="name">Full Name (Invite Recipient): </label>
+                                            <label for="name">Full Name <strong>(Invite Recipient)</strong>: </label>
                                             <input id="name" name="name" placeholder="Your name here" required />
                                         </fieldset>
                                     </div>
 
                                     <div class="col-sm-12 margin-bottom">
                                         <fieldset class="pure-group">
-                                            <label for="numOfGuests">Number of Guest(s) (Indicated on your invitation, do not include yourself): </label>
+                                            <label for="numOfGuests">Number of +1's (Indicated on your invitation, <strong>do not include yourself</strong>): </label>
                                             <select class="event-select" id="numOfGuests" name="numOfGuests" onchange="numGuestChange(this)">
                                                 <option value="0">No Guests</option>
                                                 <option value="1">1 Guest</option>
@@ -102,7 +102,7 @@
 
                                     <div class="col-sm-12 margin-bottom">
                                         <fieldset class="pure-group">
-                                            <label for="guestsNames">Guest(s) Name(s): </label>
+                                            <label for="guestsNames">Guest(s) Name(s) (Only the +1's name): </label>
                                             <textarea id="guestsNames"
                                                       name="guestsNames"
                                                       rows="5"
@@ -134,11 +134,11 @@
                                     <input hidden name="totalNumPeople" value="0" id="totalPeople" />
 
                                     <div class="col-sm-5 center-text">
-                                        <button class="btn form-sub-btn" id="btn-attending"><b>I AM ATTENDING</b></button>
+                                        <button onclick="showLoading()" class="btn form-sub-btn" id="btn-attending"><b>I AM ATTENDING</b></button>
                                     </div>
                                     <div id="btnSpace" class="col-sm-2"></div>
                                     <div class="col-sm-5 center-text">
-                                        <button class="btn form-sub-btn" id="btn-not-attending"><b>I AM NOT ATTENDING</b></button>
+                                        <button onclick="showLoading()" class="btn form-sub-btn" id="btn-not-attending"><b>I AM NOT ATTENDING</b></button>
                                     </div>
                                 </div><!-- row -->
                             </div><!-- form-elements-->
@@ -148,6 +148,15 @@
                                 <h2 class="center-text">
                                     Thank you for sharing this day with us!
                                 </h2>
+                                <br/>
+                                <h2 class="center-text">Additional Information:</h2>
+                                <br/>
+                                <h5 class="center-text"><a target="_blank" class="underline" href="https://windermeremanor.com/">Windermere Manor</a></h5>
+                                <h5 class="center-text">July 13 2019</h5>
+                                <h5 class="center-text">@ 4:00 PM</h5>
+                                <h5 class="center-text"><a target="_blank" class="underline" href="https://goo.gl/maps/wNAucf3K2ZT2">Google Map Location</a></h5>
+                                <h5 class="center-text"><a target="_blank" class="underline" href="registry.html">Registry</a></h5>
+                                <h5 class="center-text">Cash Bar (double check this)</h5>
                             </div>
                             <div style="display:none" class="sorry_message">
                                 <!-- You can customize the thankyou message by editing the code below -->

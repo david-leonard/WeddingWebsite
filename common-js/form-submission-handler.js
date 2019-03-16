@@ -61,7 +61,6 @@
 
     $("#rsvp-form").submit(function (event) {  // handles form submit without any jquery
         event.preventDefault();           // we are submitting via xhr below
-        showLoading();
         var form = event.target;
         var data = getFormData(form);         // get the values submitted in the form
 
