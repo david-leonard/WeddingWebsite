@@ -66,3 +66,7 @@ footer .email-area .submit-btn:hover{ background: #000; color: #0E2E5E !importan
 .fullwidth { width: 100% !important; }
 
 footer .copyright{ font-size: 10px !important; }
+
+.underline {
+    text-decoration: underline !important;
+}
