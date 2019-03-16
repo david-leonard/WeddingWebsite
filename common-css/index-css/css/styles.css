@@ -266,6 +266,12 @@ header .main-menu li.drop-down a.mouseover + ul.drop-down-menu{ display: block;
 
 .slider-content .title i{ transform: translateY(10px); font-size: .8em; color: #E45F74; }
 
+@media screen and (max-width: 750px) {
+    .main-slider {
+        background: url(../../../images/DButt.jpg);
+    }
+}
+
 
 /* ---------------------------------
 5. STORY AREA
@@ -347,10 +353,16 @@ header .main-menu li.drop-down a.mouseover + ul.drop-down-menu{ display: block;
 
 .contact-area .contact-wrapper{ width: 50%; }
 
-.contact-area .map-area{ width: 50%; position: absolute; top: 0; bottom: 0; right: 0; }
-
-
 .contact-area .phone{ margin: 10px 0; font-size: 2em; color: #132749; }
+
+.map-area {
+    width: 100%;
+}
+
+.index-contact {
+    text-align:center;
+    padding: 80px;
+}
 
 
 /* ---------------------------------

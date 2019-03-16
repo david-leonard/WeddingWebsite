@@ -106,7 +106,7 @@
                     }
                 }
                 $(".loading").hide();
-
+                $("#rsvp-heading").hide();
                 $("html, body").animate({ scrollTop: 0 }, "slow");
 
                 return;
