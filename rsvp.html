@@ -82,16 +82,8 @@
 
                                     <div class="col-sm-12 margin-bottom">
                                         <fieldset class="pure-group">
-                                            <label for="name">Full Name <strong>(Invite Recipient)</strong>: </label>
-                                            <input id="name" name="name" placeholder="Your name here" required />
-                                        </fieldset>
-                                    </div>
-
-                                    <div class="col-sm-12 margin-bottom">
-                                        <fieldset class="pure-group">
-                                            <label for="numOfGuests">Number of +1's (Indicated on your invitation, <strong>do not include yourself</strong>): </label>
-                                            <select class="event-select" id="numOfGuests" name="numOfGuests" onchange="numGuestChange(this)">
-                                                <option value="0">No Guests</option>
+                                            <label for="numOfGuests">Number of Guests (<strong>including yourself</strong>): </label>
+                                            <select class="event-select" id="numOfGuests" name="numOfGuests">
                                                 <option value="1">1 Guest</option>
                                                 <option value="2">2 Guests</option>
                                                 <option value="3">3 Guests</option>
@@ -102,19 +94,18 @@
 
                                     <div class="col-sm-12 margin-bottom">
                                         <fieldset class="pure-group">
-                                            <label for="guestsNames">Guest(s) Name(s) (Only the +1's name): </label>
+                                            <label for="guestsNames">Guest(s) Name(s): </label>
                                             <textarea id="guestsNames"
                                                       name="guestsNames"
                                                       rows="5"
                                                       placeholder="Sarah Ross&#10;David Leonard"
-                                                      class="fullwidth"
-                                                      disabled></textarea>
+                                                      class="fullwidth"></textarea>
                                         </fieldset>
                                     </div>
 
                                     <div class="col-sm-12 margin-bottom">
                                         <fieldset class="pure-group">
-                                            <label for="email">Your Email Address: </label>
+                                            <label for="email">Your Email Address (<strong>main contact</strong>): </label>
                                             <input id="email" name="email" type="email" value=""
                                                    required placeholder="your.email@email.com" />
                                             <span class="email-invalid" style="display:none">

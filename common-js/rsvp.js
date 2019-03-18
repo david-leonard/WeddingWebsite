@@ -1,21 +1,8 @@
-﻿function numGuestChange(selectObject) {
-
-    var currVal = selectObject.value;
-    var gn = $("#guestsNames");
-
-    if (currVal != "0")
-        gn.removeAttr('disabled');
-    else if (currVal == "0")
-        gn.attr('disabled', 'disabled'); 
-    else
-        gn.attr('disabled', 'disabled');
-}
-
-function addTotal(isAttending) {
+﻿function addTotal(isAttending) {
     var total;
 
     if (isAttending)
-        total = 1 + parseInt($("#numOfGuests").val());
+        total = parseInt($("#numOfGuests").val());
     else
         total = 0;
 
