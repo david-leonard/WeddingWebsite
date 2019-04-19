@@ -266,16 +266,23 @@ header .main-menu li.drop-down a.mouseover + ul.drop-down-menu{ display: block;
 
 .slider-content .title i{ transform: translateY(10px); font-size: .8em; color: #E45F74; }
 
-@media screen and (max-width: 750px) {
+@media screen and (max-width: 950px) {
     .main-slider {
-        background: url(../../../images/slider-1-750x900.jpg);
+        background: url(../../../images/slider-1-620x900.jpg);
         background-size: cover;
         color: #fff;
     }
 }
 
+/*@media screen and (min-width: 421) and (max-width: 750px) {
+    .main-slider {
+        background: url(../../../images/slider-1-750x900.jpg);
+        background-size: cover;
+        color: #fff;
+    }
+}*/
 
-@media screen and (min-width: 751px) and (max-width: 1100px) {
+@media screen and (min-width: 951px) and (max-width: 1200px) {
     .main-slider {
         background: url(../../../images/slider-1-1500x900.jpg);
         background-size: cover;
@@ -308,7 +315,21 @@ header .main-menu li.drop-down a.mouseover + ul.drop-down-menu{ display: block;
 
 .remaining-time .time-sec .title{ font-size: 3em; line-height: 1; display: block; }
 
+@media screen and (min-width: 601px) and (max-width: 1100px) {
+    .counter-area {
+        background: url(../../../images/counter-1-1100x600.jpg);
+        background-size: cover;
+        color: #fff;
+    }
+}
 
+@media screen and (max-width: 600px) {
+    .counter-area {
+        background: url(../../../images/counter-1-600x600.jpg);
+        background-size: cover;
+        color: #fff;
+    }
+}
 
 /* ---------------------------------
 7. WEDDING DETAILS AREA
