@@ -9,7 +9,9 @@
 	
 	<!-- Font -->
 	
-	<link href="https://fonts.googleapis.com/css?family=Playball%7CBitter" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Playball%7CBitter" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Homemade+Apple" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
 	
 	<!-- Stylesheets -->
 	
@@ -17,18 +19,22 @@
 	
 	<link href="common-css/font-icon.css" rel="stylesheet">
 	
-	<link href="03-regular-page/css/styles.css" rel="stylesheet">
+	<link href="common-css/registry-css/css/styles.css" rel="stylesheet">
 	
-	<link href="03-regular-page/css/responsive.css" rel="stylesheet">
+	<link href="common-css/registry-css/css/responsive.css" rel="stylesheet">
+
+    <link href="common-css/custom.css" rel="stylesheet">
+
+    <link rel="shortcut icon" href="#" />
+
+
 	
 </head>
-<body>
+<body class="background-under">
 
     <header>
 
         <div class="container">
-
-            <a class="logo" href="index.html"><img src="images/logo-white.png" alt="Logo"></a>
 
             <div class="menu-nav-icon" data-nav-menu="#main-menu"><i class="icon icon-bars"></i></div>
 
@@ -37,6 +43,7 @@
                 <li><a href="registry.html">REGISTRY</a></li>
                 <li><a href="gallery.html">GALLERY</a></li>
                 <li><a href="rsvp.html">RSVP</a></li>
+                <li><a href="index.html#contact-main">CONTACT</a></li>
             </ul><!-- main-menu -->
 
         </div><!-- container -->
@@ -48,16 +55,12 @@
             <div class="display-table-cell">
                 <div class="slider-content">
 
-                    <h1 class="title">Regular Page</h1>
-                    <a href="01-homepage.html"><i class="icon icon-home"></i>Home</a>
-                    <a href="01-homepage.html"><i class="icon icon-right-open-big"></i>Archive</a>
-                    <a href="#"><i class="icon icon-right-open-big"></i>Regular Page</a>
+                    <h1 class="title">REGISTRY</h1>
 
                 </div><!-- slider-content-->
             </div><!--display-table-cell-->
         </div><!-- display-table-->
     </div><!-- main-slider -->
-
 
     <section class="regular-area">
         <div class="container">
@@ -65,8 +68,8 @@
                 <div class="col-sm-12">
 
                     <div class="content">
-                        <script id='script_myregistry_giftlist_iframe' type='text/javascript' src='//www.myregistry.com//Visitors/GiftList/iFrames/EmbedRegistry.ashx?r=Ih7WheGXU7nK3a2PZB-lQg2&v=2'></script>
-
+                        <!--https://answers.laserfiche.com/questions/125359/Jquery-Error-Blocked-a-frame-with-origin-from-accessing-a-crossorigin-frame-->
+                        <script id="script_myregistry_giftlist_iframe" type="text/javascript" src="//www.myregistry.com//Visitors/GiftList/iFrames/EmbedRegistry.ashx?r=Ih7WheGXU7nK3a2PZB-lQg2&v=2"></script>
                     </div><!-- content -->
 
                 </div><!-- col-sm-12 -->
@@ -78,14 +81,11 @@
     <footer>
         <div class="container center-text">
 
-            <div class="logo-wrapper">
-                <a class="logo" href="index.html"><img src="images/logo-black.png" alt="Logo Image"></a>
-            </div>
-
             <ul class="footer-links">
                 <li><a href="index.html">HOME</a></li>
                 <li><a href="registry.html">REGISTRY</a></li>
                 <li><a href="gallery.html">GALLERY</a></li>
+                <li><a href="rsvp.html">RSVP</a></li>
                 <li><a href="index.html#contact-main">CONTACT</a></li>
             </ul>
 
@@ -98,7 +98,6 @@
 
         </div><!-- container -->
     </footer>
-
 
     <!-- SCIPTS -->
 

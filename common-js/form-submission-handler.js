@@ -91,10 +91,23 @@
                 if (formElements) {
                     formElements.style.display = "none"; // hide form
                 }
-                var thankYouMessage = form.querySelector(".thankyou_message");
-                if (thankYouMessage) {
-                    thankYouMessage.style.display = "block";
+
+                // user is attending 
+                if (parseInt(data.totalNumPeople) >= 1) {
+                    var thankYouMessage = form.querySelector(".thankyou_message");
+                    if (thankYouMessage) {
+                        thankYouMessage.style.display = "block";
+                    }
+                } else {
+                    var SorryMessage = form.querySelector(".sorry_message");
+                    if (SorryMessage) {
+                        SorryMessage.style.display = "block";
+                    }
                 }
+                $(".loading").hide();
+                $("#rsvp-heading").hide();
+                $("html, body").animate({ scrollTop: 0 }, "slow");
+
                 return;
             };
             // url encode form data for sending as post data
@@ -116,9 +129,23 @@
     document.addEventListener("DOMContentLoaded", loaded, false);
 
     function disableAllButtons(form) {
-        var buttons = $("#form-sub-btn");
+        var buttons = $(".form-sub-btn");
         for (var i = 0; i < buttons.length; i++) {
             buttons[i].disabled = true;
         }
+    }
+
+    function showLoading() {
+        jQuery.fn.center = function () {
+            this.css("position", "absolute");
+            this.css("top", Math.max(0, (($(window).height() - $(this).outerHeight()) / 2) +
+                $(window).scrollTop()) / 2 + "px");
+            this.css("left", Math.max(0, (($(window).width() - $(this).outerWidth()) / 2) +
+                $(window).scrollLeft()) + "px");
+            return this;
+        }
+
+        $(".loader").center();
+        $(".loading").show();
     }
 })();

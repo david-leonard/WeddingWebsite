@@ -9,35 +9,46 @@
 	
 	<!-- Font -->
 	
-	<link href="https://fonts.googleapis.com/css?family=Playball%7CBitter" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Playball%7CBitter" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Homemade+Apple" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
 	
 	<!-- Stylesheets -->
 	
-	<link href="common-css/bootstrap.css" rel="stylesheet">
+	<link href="common-css/bootstrap.css" rel="stylesheet" />
 	
-	<link href="common-css/font-icon.css" rel="stylesheet">
+	<link href="common-css/font-icon.css" rel="stylesheet" />
 	
 	
-	<link href="02-rsvp/css/styles.css" rel="stylesheet">
+	<link href="common-css/rsvp-css/css/styles.css" rel="stylesheet" />
 	
-	<link href="02-rsvp/css/responsive.css" rel="stylesheet">
+	<link href="common-css/rsvp-css/css/responsive.css" rel="stylesheet" />
+
+    <link href="common-css/custom.css" rel="stylesheet" />
+
+    <link href="common-css/loading-gif.css" rel="stylesheet" />
+
+    <link rel="shortcut icon" href="#" />
 	
 </head>
 <body>
+
+    <div style="display: none;" class="loading">
+        <div class="loader"></div>
+    </div>
 
     <header>
 
         <div class="container">
 
-            <a class="logo" href="index.html"><img src="images/logo-white.png" alt="Logo"></a>
-
             <div class="menu-nav-icon" data-nav-menu="#main-menu"><i class="icon icon-bars"></i></div>
 
             <ul class="main-menu visible-on-click" id="main-menu">
                 <li><a href="index.html">HOME</a></li>
-                <li><a href="registry.html">REGISTRY</a></li>
-                <li><a href="gallery.html">GALLERY</a></li>
-                <li><a href="rsvp.html">RSVP</a></li>
+				<li><a href="registry.html">REGISTRY</a></li>
+				<li><a href="gallery.html">GALLERY</a></li>
+				<li><a href="rsvp.html">RSVP</a></li>
+				<li><a href="index.html#contact-main">CONTACT</a></li>
             </ul><!-- main-menu -->
 
         </div><!-- container -->
@@ -49,134 +60,102 @@
             <div class="display-table-cell">
                 <div class="slider-content">
 
-                    <h3 class="pre-title">RSVP</h3>
-                    <h1 class="title">Be Our Guest</h1>
+                    <h1 class="title">BE OUR GUEST</h1>
+                    <h5 class="date">SATURDAY JULY 13 2019</h5>
 
                 </div><!-- slider-content-->
             </div><!--display-table-cell-->
         </div><!-- display-table-->
     </div><!-- main-slider -->
-
     <!-- https://github.com/dwyl/learn-to-send-email-via-google-script-html-no-server -->
 
-    <form id="rsvp-form" method="post" data-email="" action="https://script.google.com/macros/s/AKfycbwSgcgW7uVMYtfEx9gZHiJdoNSSUtJKjwzqjfloAA/exec">
-
-        <div class="form-elements">
-            <fieldset class="pure-group">
-                <label for="name">Name: </label>
-                <input id="name" name="name" placeholder="Invite Recipient" />
-            </fieldset>
-
-            <fieldset class="pure-group">
-                <label for="numOfGuests">Number Of Guests: </label>
-                <select id="numOfGuests" name="numOfGuests">
-                    <option value="0">No Guests</option>
-                    <option value="1">1 Guest</option>
-                    <option value="2">2 Guests</option>
-                    <option value="3">3 Guests</option>
-                    <option value="4">4 Guests</option>
-                    <option value="5">5 Guests</option>
-                    <option value="6">6 Guests</option>
-                </select>
-            </fieldset>
-
-            <fieldset class="pure-group">
-                <label for="guestsNames">Guest(s) Name(s): </label>
-                <textarea id="guestsNames" name="guestsNames" rows="5"
-                          placeholder="Sarah Ross&#10;David Leonard"></textarea>
-            </fieldset>
-
-            <fieldset class="pure-group">
-                <label for="email"><em>Your</em> Email Address:</label>
-                <input id="email" name="email" type="email" value=""
-                       required placeholder="your.name@email.com" />
-                <span class="email-invalid" style="display:none">
-                    Must be a valid email address
-                </span>
-            </fieldset>
-
-            <fieldset class="pure-group">
-                <label for="dietaryRestrictions">Dietary Restrictions (for you and your guest(s)): </label>
-                <textarea rows="10" id="dietaryRestrictions" name="dietaryRestrictions" placeholder="Sarah: Lactose, Milk, Cheese&#10;David: None"></textarea>
-            </fieldset>
-
-            <button id="form-sub-btn" class="button-success pure-button button-xlarge">
-                <i class="fa fa-paper-plane"></i>&nbsp;Send
-            </button>
-        </div>
-
-        <div style="display:none" class="thankyou_message">
-            <!-- You can customize the thankyou message by editing the code below -->
-            <h2>
-                Thank you for sharing this day with us!
-            </h2>
-        </div>
-
-    </form>
-
-    <section class="section contact-area">
-        <div class="container">
+    <section class="contact-area">
+        <div class="container rsvp-container">
             <div class="row">
-
-                <div class="col-sm-12 col-md-4 col-lg-6">
-                    <div class="margin-bottom display-table">
-                        <div class="display-table-cell">
-
-                            <div class="heading">
-                                <h2 class="title">Contact Us</h2>
-                                <i class="icon icon-star"></i>
-                            </div>
-
-                            <p>On the 25 September 2017</p>
-                            <p>Join us as we celebrate life and love.</p>
-                            <h3><a href="tel:784-412-0646" class="phone">784-412-0646</a></h3>
-                            <h3><a href="tel:784-412-0245" class="phone">784-412-0245</a></h3>
-                            <h5><a href="mailto:events@colorlib.com" class="email">events@colorlib.com</a></h5>
-                            <p>14 Baria street 133/2, New York City, US</p>
-
-                        </div><!-- display-table-cell -->
-                    </div><!-- margin-bottom -->
-                </div><!-- col-sm-6 -->
-
-                <div class="col-sm-12 col-md-8 col-lg-6">
+                <div class="col-sm-12 col-md-12 col-lg-12">
                     <div class="contact-form margin-bottom">
-                        <h2 class="center-text">Are you getting?</h2>
-                        <h4 class="pre-title center-text">RSVP HERE!</h4>
-                        <form method="post">
-                            <div class="row">
+                        <h2 id="rsvp-heading" class="center-text">RSVP HERE</h2>
+                        <form id="rsvp-form" method="post" data-email="" action="https://script.google.com/macros/s/AKfycbwoV1-nwk2I5__MxT5CKUIKW9tusqIkWfSW3Cgb60jLtS6FlxOE/exec">
 
-                                <div class="col-sm-12 margin-bottom">
-                                    <label>Full Name</label>
-                                    <input class="name-input" type="text">
-                                </div>
-                                <div class="col-sm-12 margin-bottom">
-                                    <label>Email</label>
-                                    <input class="email-input" type="text">
-                                </div>
-                                <div class="col-sm-6 margin-bottom">
-                                    <label>Guest</label>
-                                    <select class="event-select" name="option">
-                                        <option value="1"><span>00</span></option>
-                                        <option value="2">01</option>
-                                        <option value="3">02</option>
-                                        <option value="3">03</option>
-                                        <option value="3">04</option>
-                                    </select>
-                                </div>
-                                <div class="col-sm-6 margin-bottom">
-                                    <label>Event</label>
-                                    <select class="event-select" name="option">
-                                        <option value="1">All Events</option>
-                                        <option value="3">Option 1</option>
-                                        <option value="3">Option 2</option>
-                                        <option value="3">Option 3</option>
-                                    </select>
-                                </div>
-                                <div class="col-sm-12 center-text">
-                                    <button class="btn"><b>I AM ATTENDING</b></button>
-                                </div>
+                            <div class="form-elements">
+                                <div class="row">
 
-                            </div><!-- row -->
+                                    <div class="col-sm-12 margin-bottom">
+                                        <fieldset class="pure-group">
+                                            <label for="numOfGuests">Number of Guests (<strong>including yourself</strong>): </label>
+                                            <select class="event-select" id="numOfGuests" name="numOfGuests">
+                                                <option value="1">1 Guest</option>
+                                                <option value="2">2 Guests</option>
+                                                <option value="3">3 Guests</option>
+                                                <option value="4">4 Guests</option>
+                                            </select>
+                                        </fieldset>
+                                    </div>
+
+                                    <div class="col-sm-12 margin-bottom">
+                                        <fieldset class="pure-group">
+                                            <label for="guestsNames">Guest(s) Name(s): </label>
+                                            <textarea id="guestsNames"
+                                                      name="guestsNames"
+                                                      rows="5"
+                                                      placeholder="Sarah Ross&#10;David Leonard"
+                                                      class="fullwidth"></textarea>
+                                        </fieldset>
+                                    </div>
+
+                                    <div class="col-sm-12 margin-bottom">
+                                        <fieldset class="pure-group">
+                                            <label for="email">Your Email Address (<strong>main contact</strong>): </label>
+                                            <input id="email" name="email" type="email" value=""
+                                                   required placeholder="your.email@email.com" />
+                                            <span class="email-invalid" style="display:none">
+                                                Must be a valid email address
+                                            </span>
+                                        </fieldset>
+                                    </div>
+
+                                    <div class="col-sm-12 margin-bottom">
+                                        <fieldset class="pure-group">
+                                            <label for="dietaryRestrictions">Dietary Restrictions (for you and your guest(s)): </label>
+                                            <textarea class="fullwidth" rows="10" id="dietaryRestrictions" name="dietaryRestrictions" placeholder="Sarah: Lactose, Milk, Cheese&#10;David: None"></textarea>
+                                        </fieldset>
+                                    </div>
+
+                                    <input hidden name="isAttending" value="attending" id="isAttending" />
+                                    <input hidden name="totalNumPeople" value="0" id="totalPeople" />
+
+                                    <div class="col-sm-5 center-text">
+                                        <button onclick="showLoading()" class="btn form-sub-btn" id="btn-attending"><b>ATTENDING</b></button>
+                                    </div>
+                                    <div id="btnSpace" class="col-sm-2"></div>
+                                    <div class="col-sm-5 center-text">
+                                        <button onclick="showLoading()" class="btn form-sub-btn" id="btn-not-attending"><b>NOT ATTENDING</b></button>
+                                    </div>
+                                </div><!-- row -->
+                            </div><!-- form-elements-->
+
+                            <div style="display:none" class="thankyou_message">
+                                <!-- You can customize the thankyou message by editing the code below -->
+                                <h2 class="center-text">
+                                    Thank you for sharing this day with us!
+                                </h2>
+                                <br />
+                                <h2 class="center-text">Additional Information:</h2>
+                                <br />
+                                <h5 class="center-text"><a target="_blank" class="underline" href="https://windermeremanor.com/">Windermere Manor</a></h5>
+                                <h5 class="center-text">Saturday July 13 2019</h5>
+                                <h5 class="center-text">4:00 PM</h5>
+                                <h5 class="center-text"><a target="_blank" class="underline" href="https://goo.gl/maps/wNAucf3K2ZT2">Google Map Location</a></h5>
+                                <h5 class="center-text"><a target="_blank" class="underline" href="registry.html">Registry</a></h5>
+                                <h5 class="center-text">Cash Bar</h5>
+                                <h5 class="center-text">Dressy Casual</h5>
+                            </div>
+                            <div style="display:none" class="sorry_message">
+                                <!-- You can customize the thankyou message by editing the code below -->
+                                <h2 class="center-text">
+                                    Thank you for letting us know!
+                                </h2>
+                            </div>
                         </form>
                     </div><!-- contact-form -->
                 </div><!-- col-sm-6 -->
@@ -186,22 +165,19 @@
     </section><!-- section -->
 
     <div class="map-area">
-        <div id="map" style="height:100%;"></div>
+        <div id="map" class="map-area">
+            <iframe class="map-area" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11669.14266393532!2d-81.283499!3d43.014374!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x43833d992301f67!2sWindermere+Manor!5e0!3m2!1sen!2sca!4v1552238277560" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+        </div>
     </div><!-- map-area -->
-    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB-oEyU88bRR6xcbV1gI_Cahc8ugKC_JPE&callback=initMap"></script>
-
 
     <footer>
         <div class="container center-text">
-
-            <div class="logo-wrapper">
-                <a class="logo" href="index.html"><img src="images/logo-black.png" alt="Logo Image"></a>
-            </div>
 
             <ul class="footer-links">
                 <li><a href="index.html">HOME</a></li>
                 <li><a href="registry.html">REGISTRY</a></li>
                 <li><a href="gallery.html">GALLERY</a></li>
+				<li><a href="rsvp.html">RSVP</a></li>
                 <li><a href="index.html#contact-main">CONTACT</a></li>
             </ul>
 
@@ -225,6 +201,8 @@
     <script src="common-js/bootstrap.js"></script>
 
     <script src="common-js/scripts.js"></script>
+
+    <script src="common-js/rsvp.js"></script>
 
     <script data-cfasync="false" type="text/javascript" src="common-js/form-submission-handler.js"></script>
 
