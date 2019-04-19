@@ -268,10 +268,20 @@ header .main-menu li.drop-down a.mouseover + ul.drop-down-menu{ display: block;
 
 @media screen and (max-width: 750px) {
     .main-slider {
-        background: url(../../../images/DButt.jpg);
+        background: url(../../../images/slider-1-750x900.jpg);
+        background-size: cover;
+        color: #fff;
     }
 }
 
+
+@media screen and (min-width: 751px) and (max-width: 1100px) {
+    .main-slider {
+        background: url(../../../images/slider-1-1500x900.jpg);
+        background-size: cover;
+        color: #fff;
+    }
+}
 
 /* ---------------------------------
 5. STORY AREA
