@@ -1,0 +1,41 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.329
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "WeddingSite", ".", "{1D7CA3D4-B98B-4B55-91EE-83860E4FBE9F}"
+	ProjectSection(WebsiteProperties) = preProject
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.0"
+		Debug.AspNetCompiler.VirtualPath = "/localhost_50767"
+		Debug.AspNetCompiler.PhysicalPath = "..\WeddingSite\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_50767\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/localhost_50767"
+		Release.AspNetCompiler.PhysicalPath = "..\WeddingSite\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_50767\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		VWDPort = "50767"
+		SlnRelativePath = "..\WeddingSite\"
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1D7CA3D4-B98B-4B55-91EE-83860E4FBE9F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1D7CA3D4-B98B-4B55-91EE-83860E4FBE9F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {C0C64285-DCFB-49DB-B6BC-F068D69C4824}
+	EndGlobalSection
+EndGlobal
