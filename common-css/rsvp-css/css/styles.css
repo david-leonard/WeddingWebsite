@@ -248,6 +248,13 @@ header .main-menu li.drop-down a.mouseover + ul.drop-down-menu{ display: block;
 
 .main-slider .pre-title{ color: #E45F74; }
 
+@media screen and (max-width: 1033px) {
+    .main-slider {
+        background: url(../../../images/counter-1-600x600.jpg);
+        background-size: cover;
+        color: #fff;
+    }
+}
 
 /* ---------------------------------
 5. CONTACT AREA

@@ -249,7 +249,13 @@ header .main-menu li.drop-down a.mouseover + ul.drop-down-menu{ display: block;
 
 .main-slider .slider-content i{ margin-right: 10px; transform: translateY(3px); }
 
-
+@media screen and (max-width: 1033px) {
+    .main-slider {
+        background: url(../../../images/counter-1-600x600.jpg);
+        background-size: cover;
+        color: #fff;
+    }
+}
 
 /* ---------------------------------
 5. CONTENT AREA
