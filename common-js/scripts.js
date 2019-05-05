@@ -245,3 +245,16 @@ function initMap() {
 	map.mapTypes.set('styled_map', styledMapType);
 	map.setMapTypeId('styled_map');
 }
+
+
+function showInfoModal() {
+    var modal = $("#infoModal");
+
+    if (modal.hasClass('in')) {
+        modal.modal('hide');
+    }
+
+    modal.modal('show');
+
+    //var html = 
+}

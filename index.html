@@ -47,11 +47,47 @@
                 <li><a href="gallery.html">GALLERY</a></li>
                 <li><a href="rsvp.html">RSVP</a></li>
                 <li><a href="index.html#contact-main">CONTACT</a></li>
+                <li><a onclick="showInfoModal()" style="cursor:pointer">ADDITIONAL INFORMATION</a></li>
             </ul><!-- main-menu -->
 
         </div><!-- container -->
     </header>
 
+    <div class="modal fade" id="infoModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Additional Informaion</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <br/>
+                    <p class="center-text"><a target="_blank" class="underline" href="https://windermeremanor.com/">Windermere Manor</a></p>
+                    <p class="center-text">Saturday July 13 2019</p>
+                    <p class="center-text">4:00 PM</p>
+                    <p class="center-text"><a target="_blank" class="underline" href="https://goo.gl/maps/wNAucf3K2ZT2">Google Map Location</a></p>
+                    <p class="center-text"><a target="_blank" class="underline" href="registry.html">Registry</a></p>
+                    <p class="center-text">Cash Bar</p>
+                    <p class="center-text">Dressy Casual</p>
+                    <br/>
+                    <h2 class="center-text">Additional Hotel Information</h2>
+                    <br/>
+                    <p class="center-text">If Windermere no longer has space please book a room here:</p>
+                    <p class="center-text "><a target="_blank" class="underline" href="https://www.parkhotelsuites.com/">The Park Hotel London</a></p>
+                    <p class="center-text">An All-Suite Boutique Hotel</p>
+                    <p class="center-text">242 Pall Mall St. London ON, N6A 5P6</p>
+                    <p class="center-text">T. 519-963-1663</p>
+                    <p class="center-text">Book under the group name Ross Leonard Wedding</p>
+                    <br/>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <div class="main-slider">
         <div class="display-table center-text">
@@ -79,10 +115,11 @@
                     </div>
 
                     <p class="desc margin-bottom">Your classic story of a small town girl and a city boy – Sarah moved to London from Chatham, and David from Thornhill. We first crossed paths in 2011 when we worked together at Fanshawe College's on-campus restaurant, Oasis. David was the stir-fry guy and Sarah was the cashier so he would write notes to her on people's take-out boxes to "break the communication barrier". We started as friends, with just a little, light flirting. And that's how it stayed for a while. It wasn't until a few months after graduation, we ran into eachother on the city bus and caught up while travelling down Richmond Street. We officially started dating in February 2013.</p>
-					<br />
-					<p>6 years worth of memories later – backcountry camping trips, ballroom dance lessons, and buying our home in London. David popped the question, surrounded by some of our closest friends on a walk through Gibbons Park in August 2017, and Sarah said yes! We can't wait to celebrate with you all as we start our next chapter!
-					</p>
-					<br />
+                    <br />
+                    <p>
+                        6 years worth of memories later – backcountry camping trips, ballroom dance lessons, and buying our home in London. David popped the question, surrounded by some of our closest friends on a walk through Gibbons Park in August 2017, and Sarah said yes! We can't wait to celebrate with you all as we start our next chapter!
+                    </p>
+                    <br />
 
                 </div><!-- col-sm-10 -->
             </div><!-- row -->
@@ -211,35 +248,35 @@
     <section class="contact-area" style="top:-8px;">
         <div id="contact-main" class="index-contact">
 
-                <div class="row">
-                    <div class="col-sm-6">
+            <div class="row">
+                <div class="col-sm-6">
 
-                        <div class="margin-bottom" style="padding-top: 30px;">
-                            <h2 class="center-text">DETAILS</h2>
-                            <br />
-                            <p class="center-text"><a target="_blank" class="underline" href="https://windermeremanor.com/">Windermere Manor</a></p>
-                            <p class="center-text">Saturday July 13 2019</p>
-                            <p class="center-text">4:00 PM</p>
-                            <p class="center-text"><a target="_blank" class="underline" href="https://goo.gl/maps/wNAucf3K2ZT2">Google Map Location</a></p>
-                            <p class="center-text"><a target="_blank" class="underline" href="registry.html">Registry</a></p>
-                            <p class="center-text">Cash Bar</p>
-                            <p class="center-text">Dressy Casual</p>
-                        </div><!-- margin-bottom -->
-                    </div><!-- col-sm-10 -->
-					
-					<div class="col-sm-6">
+                    <div class="margin-bottom" style="padding-top: 30px;">
+                        <h2 class="center-text">DETAILS</h2>
+                        <br />
+                        <p class="center-text"><a target="_blank" class="underline" href="https://windermeremanor.com/">Windermere Manor</a></p>
+                        <p class="center-text">Saturday July 13 2019</p>
+                        <p class="center-text">4:00 PM</p>
+                        <p class="center-text"><a target="_blank" class="underline" href="https://goo.gl/maps/wNAucf3K2ZT2">Google Map Location</a></p>
+                        <p class="center-text"><a target="_blank" class="underline" href="registry.html">Registry</a></p>
+                        <p class="center-text">Cash Bar</p>
+                        <p class="center-text">Dressy Casual</p>
+                    </div><!-- margin-bottom -->
+                </div><!-- col-sm-10 -->
 
-                        <div class="margin-bottom" style="padding-top: 30px;">
-							<h2 class="center-text">CONTACT</h2>
-							<br />
-                            <p>Contact us if you have any questions</p>
-                            <p><a class="underline" href="tel:1-519-437-7444" class="phone">1-519-437-7444</a></p>
-                            <p><a class="underline" href="mailto:sarahrossgraphicdesign@gmail.com?Subject=Questions%20About%20The%20Wedding">sarahrossgraphicdesign@gmail.com</a></p>
-                            <p><a class="underline" href="mailto:david.stephen.leonard@gmail.com?Subject=Questions%20About%20The%20Wedding">david.stephen.leonard@gmail.com</a></p>
-                        </div><!-- margin-bottom -->
-                    </div><!-- col-sm-10 -->
+                <div class="col-sm-6">
 
-                </div><!-- row -->
+                    <div class="margin-bottom" style="padding-top: 30px;">
+                        <h2 class="center-text">CONTACT</h2>
+                        <br />
+                        <p>Contact us if you have any questions</p>
+                        <p><a class="underline" href="tel:1-519-437-7444" class="phone">1-519-437-7444</a></p>
+                        <p><a class="underline" href="mailto:sarahrossgraphicdesign@gmail.com?Subject=Questions%20About%20The%20Wedding">sarahrossgraphicdesign@gmail.com</a></p>
+                        <p><a class="underline" href="mailto:david.stephen.leonard@gmail.com?Subject=Questions%20About%20The%20Wedding">david.stephen.leonard@gmail.com</a></p>
+                    </div><!-- margin-bottom -->
+                </div><!-- col-sm-10 -->
+
+            </div><!-- row -->
         </div><!-- float-left -->
 
     </section><!-- section -->
@@ -253,6 +290,7 @@
                 <li><a href="gallery.html">GALLERY</a></li>
                 <li><a href="rsvp.html">RSVP</a></li>
                 <li><a href="index.html#contact-main">CONTACT</a></li>
+                <li><a onclick="showInfoModal()" style="cursor:pointer">ADDITIONAL INFORMATION</a></li>
             </ul>
 
             <p class="copyright">

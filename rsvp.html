@@ -45,15 +45,51 @@
 
             <ul class="main-menu visible-on-click" id="main-menu">
                 <li><a href="index.html">HOME</a></li>
-				<li><a href="registry.html">REGISTRY</a></li>
-				<li><a href="gallery.html">GALLERY</a></li>
-				<li><a href="rsvp.html">RSVP</a></li>
-				<li><a href="index.html#contact-main">CONTACT</a></li>
+                <li><a href="registry.html">REGISTRY</a></li>
+                <li><a href="gallery.html">GALLERY</a></li>
+                <li><a href="rsvp.html">RSVP</a></li>
+                <li><a href="index.html#contact-main">CONTACT</a></li>
+                <li><a onclick="showInfoModal()" style="cursor:pointer">ADDITIONAL INFORMATION</a></li>
             </ul><!-- main-menu -->
 
         </div><!-- container -->
     </header>
 
+    <div class="modal fade" id="infoModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Additional Informaion</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <br />
+                    <p class="center-text"><a target="_blank" class="underline" href="https://windermeremanor.com/">Windermere Manor</a></p>
+                    <p class="center-text">Saturday July 13 2019</p>
+                    <p class="center-text">4:00 PM</p>
+                    <p class="center-text"><a target="_blank" class="underline" href="https://goo.gl/maps/wNAucf3K2ZT2">Google Map Location</a></p>
+                    <p class="center-text"><a target="_blank" class="underline" href="registry.html">Registry</a></p>
+                    <p class="center-text">Cash Bar</p>
+                    <p class="center-text">Dressy Casual</p>
+                    <br />
+                    <h2 class="center-text">Additional Hotel Information</h2>
+                    <br />
+                    <p class="center-text">If Windermere no longer has space please book a room here:</p>
+                    <p class="center-text "><a target="_blank" class="underline" href="https://www.parkhotelsuites.com/">The Park Hotel London</a></p>
+                    <p class="center-text">An All-Suite Boutique Hotel</p>
+                    <p class="center-text">242 Pall Mall St. London ON, N6A 5P6</p>
+                    <p class="center-text">T. 519-963-1663</p>
+                    <p class="center-text">Book under the group name Ross Leonard Wedding</p>
+                    <br />
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <div class="main-slider">
         <div class="display-table center-text">
@@ -149,6 +185,15 @@
                                 <h5 class="center-text"><a target="_blank" class="underline" href="registry.html">Registry</a></h5>
                                 <h5 class="center-text">Cash Bar</h5>
                                 <h5 class="center-text">Dressy Casual</h5>
+                                <br />
+                                <h2 class="center-text">Additional Hotel Information</h2>
+                                <br />
+                                <h5 class="center-text">If Windermere no longer has space please book a room here:</h5>
+                                <h5 class="center-text "><a target="_blank" class="underline" href="https://www.parkhotelsuites.com/">The Park Hotel London</a></h5>
+                                <h5 class="center-text">An All-Suite Boutique Hotel</h5>
+                                <h5 class="center-text">242 Pall Mall St. London ON, N6A 5P6</h5>
+                                <h5 class="center-text">T. 519-963-1663</h5>
+                                <h5 class="center-text">Book under the group name Ross Leonard Wedding</h5>
                             </div>
                             <div style="display:none" class="sorry_message">
                                 <!-- You can customize the thankyou message by editing the code below -->
@@ -177,8 +222,9 @@
                 <li><a href="index.html">HOME</a></li>
                 <li><a href="registry.html">REGISTRY</a></li>
                 <li><a href="gallery.html">GALLERY</a></li>
-				<li><a href="rsvp.html">RSVP</a></li>
+                <li><a href="rsvp.html">RSVP</a></li>
                 <li><a href="index.html#contact-main">CONTACT</a></li>
+                <li><a onclick="showInfoModal()" style="cursor:pointer">ADDITIONAL INFORMATION</a></li>
             </ul>
 
             <p class="copyright">
